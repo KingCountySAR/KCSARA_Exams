@@ -261,8 +261,8 @@ class Exams extends Public_Controller
 			$heuristics->assert_language_is_inappropriate( $serialized_input, $blacklistedstrings, $this->config->item('exams.language_is_inappropriate') );
 			$heuristics->assert_contains_too_many_urls( ( $fullname . ' ' . $email . ' ' . $notes ), $this->config->item('exams.too_many_urls'), 3, 150 );
 
-			$spam_score = $heuristics->score();
-			$spam_result = $heuristics->results();
+			$spam_score = $heuristics->score;
+			$spam_result = $heuristics->result;
 			if($signature != sha1( $this->signature_seed() . $timestamp . $nonce ))
 			{
 				$spam_score += $this->config->item('exams.signature_checksum');

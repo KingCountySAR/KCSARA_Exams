@@ -139,7 +139,8 @@ class Exams_m extends MY_Model {
 			'spamscore' => $spam_score,
 			'spamexplanation' => implode( '\n', $spam_explanation ),
 			'spamscoreoverride' => 0,
-			'submission' => $serialized_input
+			'submission' => $serialized_input,
+			'detailed_report' => ""
 		);
 
 		$this->db->insert($_table_prefix . 'log', $data);
