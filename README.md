@@ -46,7 +46,7 @@ allows an access point for PyroCMS.
 		}
 	}
 
-### [SixtySix_Heuristics](webmaster@kcsara.org) ###
+### [SixtySix_Heuristics](mailto:webmaster@kcsara.org) ###
 
 This is a custom built Turing test, that stays out of the way of visitors. Until we
 place this in a public repository. please email us for the code.
